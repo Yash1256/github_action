@@ -1,4 +1,4 @@
- #!/usr/bin/env bash 
+ #!/usr/bin/bash 
  folders=("include" "includes" "src" "source" "sources" "test" "tests")
  for folder in ${folders[@]}; do
   echo ${folder}
