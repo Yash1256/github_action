@@ -1,7 +1,6 @@
  #!/usr/bin/env bash 
  folders=("include" "includes" "src" "source" "sources" "test" "tests")
- for folder in "${folders[@]}"
- do
+ for folder in ${folders[@]}; do
   echo ${folder}
   if [[ -d ${folder} ]]; then
     command="cpplint --recursive ${folder}/*"
@@ -10,4 +9,4 @@
       echo "::error :: Review your Code"
     fi
   fi
-done
+ done
