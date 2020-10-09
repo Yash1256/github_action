@@ -1,6 +1,6 @@
  #!/usr/bin/env bash 
  folders=("include" "includes" "src" "source" "sources" "test" "tests")
- for folder in "${folders[0]}"
+ for folder in "${folders[@]}"
  do
   echo ${folder}
   if [[ -d ${folder} ]]; then
