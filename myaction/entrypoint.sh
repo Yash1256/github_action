@@ -8,7 +8,6 @@
     echo ${command}
     if ${command} | grep "error"; then
       echo "::error :: Review your Code"
-      exit 1
     fi
   fi
 done
