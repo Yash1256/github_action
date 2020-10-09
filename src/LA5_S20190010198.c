@@ -114,6 +114,7 @@ void Delete_Trie(Trie* ptr, char* str, int len) {
 int main() {
     Trie* root = Insert_New_Row();
     root->word_end = 1;
+    printf("Yash\n");
     printf("Input number of Words to Insert :: ");
     int N;
     input(N);
